@@ -2,7 +2,6 @@ package ru.netology.delivery.data;
 
 import com.github.javafaker.Faker;
 import lombok.Value;
-import lombok.val;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -30,10 +29,10 @@ public class DataGenerator {
         String[] city = {"Абакан", "Анадырь", "Архангельск", "Астрахань", "Барнаул", "Белгород",
                 "Биробиджан", "Благовещенск", "Брянск", "Великий Новгород", "Владивосток",
                 "Владикавказ", "Владимир", "Волгоград", "Вологда", "Воронеж", "Гатчина", "Горно-Алтайск",
-                "Грозный", "Донецк", "Екатеринбург", "Запорожье", "Иваново", "Ижевск", "Иркутск",
+                "Грозный", "Екатеринбург", "Иваново", "Ижевск", "Иркутск",
                 "Йошкар-Ола", "Казань", "Калининград", "Калуга",
                 "Кемерово", "Киров", "Кострома", "Краснодар", "Красноярск", "Курган",
-                "Курск", "Кызыл", "Липецк", "Луганск", "Магадан", "Магас", "Майкоп",
+                "Курск", "Кызыл", "Липецк", "Магадан", "Магас", "Майкоп",
                 "Махачкала", "Москва", "Мурманск", "Нальчик", "Нарьян-Мар",
                 "Нижний Новгород", "Новосибирск", "Омск", "Орёл", "Оренбург",
                 "Пенза", "Пермь", "Петрозаводск", "Петропавловск-Камчатский", "Псков", "Ростов-на-Дону",
@@ -56,7 +55,8 @@ public class DataGenerator {
     public static String generatePhone(String locale) {
         // TODO: добавить логику для объявления переменной phone и задания её значения,
         //  для генерации можно использовать Faker
-        String phone = String.valueOf(new Faker(new Locale(locale)).phoneNumber());
+        //String phone = String.valueOf(new Faker(new Locale(locale)).phoneNumber());
+        String phone = new Faker(new Locale(locale)).phoneNumber().phoneNumber();
         return phone;
     }
 
