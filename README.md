@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/s6457eqnl7x01rbn?svg=true)](https://ci.appveyor.com/project/SergGrebnev/automation-basics-2-3-patterns)
+[![Build status](https://ci.appveyor.com/api/projects/status/8dvqgo4ny7bf0a27?svg=true)](https://ci.appveyor.com/project/SergGrebnev/automation-basics-2-3-1-patterns)
 
 # Домашнее задание к занятию «2.3. Patterns»
 
